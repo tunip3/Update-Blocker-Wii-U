@@ -27,6 +27,8 @@ namespace ConsoleApplication1
                 {
                     case "1":
                         Console.Clear();
+                        Console.Write("Write your console's ip addres. Example: 192.168.1.1 \n");                        
+                        ip = Console.ReadLine();                                   
                         ftpRequest.Method = WebRequestMethods.Ftp.DeleteFile;
                         break;
 
